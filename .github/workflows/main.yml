@@ -2,8 +2,9 @@ name: CD Workflow
 
 on:
   push: 
-    branches: 
-          -main
+    branches:
+      - main
+      
 jobs:
   cd-test-deploy:
         name: CD deploy Test
