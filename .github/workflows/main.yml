@@ -32,7 +32,7 @@ jobs:
                   EOF
           - name: Deploy to TEST
             run: |
-                  databricks bundle deploy -t test -p TEST
+                  databricks bundle deploy -t test --profile TEST
 
   cd-prod-deploy:
           name: Deploy to prod
@@ -61,7 +61,7 @@ jobs:
                   EOF
              - name: Deploy to TEST
                run: |
-                  databricks bundle deploy -t prod -p PROD
+                  databricks bundle deploy -t prod --profile PROD
           
 
       
