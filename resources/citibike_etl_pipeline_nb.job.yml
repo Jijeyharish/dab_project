@@ -5,7 +5,7 @@ resources:
       tasks:
         - task_key: 01_bronze_citibike
           notebook_task:
-            notebook_path: ..\citibike_etl\notebooks\01_bronze\01_bronze_citibike.ipynb
+            notebook_path: ../citibike_etl/notebooks/01_bronze/01_bronze_citibike.ipynb
             base_parameters:
               pipeline_id: "{{job.id}}"
               run_id: "{{job.run_id}}"
